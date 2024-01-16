@@ -27,7 +27,7 @@ class SonarQubeTest extends TestCase
 
     public function testSonarQubeSuccess()
     {
-        data = [
+        $data = [
             'name' => 'Bimo'
         ];
 

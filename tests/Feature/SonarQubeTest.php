@@ -15,6 +15,8 @@ class SonarQubeTest extends TestCase
      */
     public function testSonarQube()
     {
+        $data = [];
+
         $this->view('sonarqube')->assertSeeText('Hello Sonarqube');
     }
 }

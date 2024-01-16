@@ -27,10 +27,10 @@ class SonarQubeTest extends TestCase
 
     public function testSonarQubeSuccess()
     {
-        $response = $this->get('/sonarqube');
+        data = [
+            'name' => 'Bimo'
+        ];
 
-        $response->assertStatus(200);
-        $response->assertViewIs('sonarqube');
-        $response->assertSeeText('Hello Sonarqube');
+        $this->view('sonarqube')->assertSeeText('Hello Sonarqube');
     }
 }

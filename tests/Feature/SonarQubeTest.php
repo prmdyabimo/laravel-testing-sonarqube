@@ -20,8 +20,6 @@ class SonarQubeTest extends TestCase
 
     public function testSonarQubeFailed()
     {
-        $data = [];
-
         $this->view('sonarqube')->assertSeeText('Hello Sonarqube Failed');
     }
 

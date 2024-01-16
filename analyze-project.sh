@@ -1,6 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script is used to analyze the project with SonarQube.
+
+# First pull the latest project 
+git pull origin main
 
 # Check if the .env file exists
 if [ -f .env ]; then
@@ -21,5 +24,5 @@ echo "Start SonarQube analysis"
 sonar-scanner \
   -Dsonar.projectKey=${SERVER_SONAR_PROJECT_KEY} \
   -Dsonar.sources=. \
-  -Dsonar.host.url=${SERVER_SONARQUBE} \
+  -Dsonar.host.url=http://${SERVER_SONARQUBE} \
   -Dsonar.token=${SERVER_SONAR_TOKEN}

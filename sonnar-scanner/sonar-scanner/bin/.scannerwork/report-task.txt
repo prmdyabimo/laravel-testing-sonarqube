@@ -1,6 +1,0 @@
-projectKey=fbs-testing
-serverUrl=http://103.178.153.11:9000
-serverVersion=10.3.0.82913
-dashboardUrl=http://103.178.153.11:9000/dashboard?id=fbs-testing
-ceTaskId=AY0Q_vtxpx0-UVsQi_Ad
-ceTaskUrl=http://103.178.153.11:9000/api/ce/task?id=AY0Q_vtxpx0-UVsQi_Ad

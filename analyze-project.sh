@@ -22,11 +22,11 @@ SERVER_SONAR_PROJECT_KEY=${SONARQUBE_PROJECT_KEY}
 
 echo "Start SonarQube analysis"
 # Command Linux (UBUNTU)
-# sonar-scanner \
-#   -Dsonar.projectKey=${SERVER_SONAR_PROJECT_KEY} \
-#   -Dsonar.sources=. \
-#   -Dsonar.host.url=http://${SERVER_SONARQUBE} \
-#   -Dsonar.token=${SERVER_SONAR_TOKEN}
+sonar-scanner \
+  -Dsonar.projectKey=${SERVER_SONAR_PROJECT_KEY} \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://${SERVER_SONARQUBE} \
+  -Dsonar.token=${SERVER_SONAR_TOKEN}
 
 # Command Windows
-sonar-scanner.bat -D"sonar.projectKey=${SERVER_SONAR_PROJECT_KEY}" -D"sonar.sources=." -D"sonar.host.url=http://${SERVER_SONARQUBE}" -D"sonar.token=${SERVER_SONAR_TOKEN}"
+# sonar-scanner.bat -D"sonar.projectKey=${SERVER_SONAR_PROJECT_KEY}" -D"sonar.sources=." -D"sonar.host.url=http://${SERVER_SONARQUBE}" -D"sonar.token=${SERVER_SONAR_TOKEN}"
